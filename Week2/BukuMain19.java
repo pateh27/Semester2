@@ -10,12 +10,23 @@ public class BukuMain19 {
         bk1.harga = 71000;
 
         bk1.tampilInformasi();
-        bk1.terjual(5);
+        bk1.hitungHargaTotal(bk1.terjual(5));
+        bk1.hitungDiskon(bk1.total);
+        bk1.hitungHargaBayar(bk1.Diskon,bk1.total);
         bk1.gantiHarga(60000);
         bk1.tampilInformasi();
 
-        Buku19 bk2 = new Buku19("Self Reward", "Maheera Ayesha", 160, 29, 59000);
+        Buku19 bk2 = new Buku19("Self Reward", "Maheera Ayesha", 160, 29,59000);
         bk2.terjual(11);
         bk2.tampilInformasi();
+
+        Buku19 bukuFatih = new Buku19("Dalail al-Khairat", "Syekh Muhammad Bin Sulaiman Al-Jazuli", 184, 10, 80000);
+        bukuFatih.tampilInformasi();
+        bukuFatih.gantiHarga(70000);
+        bukuFatih.tampilInformasi();
+        bukuFatih.hitungHargaTotal(bukuFatih.terjual(4));
+        bukuFatih.hitungDiskon(bukuFatih.total);
+        bukuFatih.hitungHargaBayar(bukuFatih.Diskon, bukuFatih.total);
+        bukuFatih.tampilInformasi();
     }
 }
