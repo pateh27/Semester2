@@ -20,6 +20,4 @@ public class Dragon19 {
             System.out.println("GAME OVER");
         }
     }
-
-    
 }
