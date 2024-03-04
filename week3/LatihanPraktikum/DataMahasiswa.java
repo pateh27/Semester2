@@ -17,15 +17,13 @@ public class DataMahasiswa {
             String nim = sc.nextLine();
             System.out.print("Jenis Kelamin (L/P): ");
             String jenisKelamin = sc.nextLine().toUpperCase();
-            while (!jenisKelamin.equals("L") && !jenisKelamin.equals("P")) {
+            if(!jenisKelamin.equals("L") && !jenisKelamin.equals("P")) {
                 System.out.print("Jenis Kelamin tidak valid! Masukkan L/P: ");
-                jenisKelamin = sc.nextLine().toUpperCase();
+                jenisKelamin = sc.nextLine();
             }
             System.out.print("IPK: ");
             double ipk = sc.nextDouble();
             sc.nextLine(); 
-
-            
             mhs[i] = new Mahasiswa(nama, nim, jenisKelamin, ipk);
         }
 
@@ -37,24 +35,3 @@ public class DataMahasiswa {
     }
 }
 
-class Mahasiswa {
-    private String nama;
-    private String nim;
-    private String jenisKelamin;
-    private double ipk;
-
-    public Mahasiswa(String nama, String nim, String jenisKelamin, double ipk) {
-        this.nama = nama;
-        this.nim = nim;
-        this.jenisKelamin = jenisKelamin;
-        this.ipk = ipk;
-    }
-
-    @Override
-    public String toString() {
-        return "Nama: " + nama + "\n"
-                + "NIM: " + nim + "\n"
-                + "Jenis Kelamin: " + jenisKelamin + "\n"
-                + "IPK: " + ipk;
-    }
-}
