@@ -20,4 +20,7 @@ public class Mahasiswa {
                 + "IPK: " + ipk;
         
     }
+    public double rataIpk() {
+        return ipk;
+    }
 }

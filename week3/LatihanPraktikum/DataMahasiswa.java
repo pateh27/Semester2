@@ -27,6 +27,12 @@ public class DataMahasiswa {
             mhs[i] = new Mahasiswa(nama, nim, jenisKelamin, ipk);
         }
 
+        double totalIPk = 0;
+        for (Mahasiswa mahasiswa : mhs) {
+            totalIPk += mahasiswa.ipk;
+            System.out.println(totalIPk);
+        }
+        
         System.out.println("\n**Informasi Mahasiswa**");
         for (Mahasiswa mahasiswa : mhs) {
             System.out.println(mahasiswa);
