@@ -1,0 +1,5 @@
+Apple:10000
+Banana:5000
+Orange:8000
+Grapes:15000
+Peach:7500
